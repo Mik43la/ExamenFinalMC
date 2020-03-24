@@ -13,11 +13,9 @@ import java.util.ArrayList;
 
 public class Conector {
 
-	/**
-	 * Atributos de clase
-	 */
+	
 	private static Connection con;
-	// para que solo se cree una vez esta clase en todo el proyecto
+
 	private static Conector INSTANCE = null;
 
 	// constructor
@@ -46,9 +44,9 @@ public class Conector {
 	// crear conexion
 	private static void crearConexion() {
 
-		String host = "127.0.0.1"; // pa todos (es la ip de local host)
-		String user = "root"; // pa todos
-		String password = ""; // Mi MySQL no tiene contraseña
+		String host = "127.0.0.1"; // ( local host)
+		String user = "root"; 
+		String password = ""; // Mi MySQL no tiene contraseÃ±a
 		String dataBase = "spotify";
 
 		try {
